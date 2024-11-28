@@ -1,0 +1,21 @@
+export type Order = {
+  id: string;
+  promotionId: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  idNumber: string;
+  address: string;
+  apartmentNo?: string;
+  city: string;
+  country: string;
+  paymentMethod: 'bank' | 'bml';
+  total: number;
+  entryCodes: string[];
+  idPhotoFilename: string;
+  transferSlipFilename?: string;
+  approved: boolean;
+  rejected: boolean;
+  createdAt: string;
+};
